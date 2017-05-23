@@ -25,7 +25,6 @@ class Configuration extends React.Component {
 
   render() {
     const stripes = this.props.stripes;
-    console.log(stripes);
 
     return (
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
