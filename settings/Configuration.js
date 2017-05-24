@@ -15,8 +15,12 @@ class Configuration extends React.Component {
     }).isRequired,
   };
 
+  static contextTypes = {
+    stripes: PropTypes.object.isRequired,
+  };
+
   onChange(e) {
-    const stripes = this.props.stripes;
+    const stripes = this.context.stripes;
     const cat = e.target.value;
     stripes.logger.categories = cat;
     stripes.logger.log('action', `changed logging categories to '${cat}'`);
@@ -24,7 +28,7 @@ class Configuration extends React.Component {
   }
 
   render() {
-    const stripes = this.props.stripes;
+    const stripes = this.context.stripes;
 
     return (
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
