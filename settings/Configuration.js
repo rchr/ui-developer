@@ -9,15 +9,17 @@ import TextField from '@folio/stripes-components/lib/TextField';
 class Configuration extends React.Component {
   static propTypes = {
     label: PropTypes.string.isRequired,
+    history: PropTypes.shape({
+      push: PropTypes.func.isRequired,
+    }).isRequired,
+  };
+
+  static contextTypes = {
     stripes: PropTypes.shape({
       logger: PropTypes.shape({
         log: PropTypes.func.isRequired,
       }).isRequired,
     }).isRequired,
-  };
-
-  static contextTypes = {
-    stripes: PropTypes.object.isRequired,
   };
 
   onChange(e) {
@@ -37,26 +39,26 @@ class Configuration extends React.Component {
     };
 
     const handlers = {
-      'stripesHome': () => {
+      stripesHome: () => {
         console.log('handler for stripesHome: going to /');
         this.props.history.push('/');
       },
-      'stripesAbout': () => {
+      stripesAbout: () => {
         console.log('handler for stripesAbout: going to /about');
         this.props.history.push('/about');
-      }
+      },
     };
 
     return (
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
-        <Row>
-         <HotKeys keyMap={globalKeyMap} handlers={handlers}>
-          <Col xs={12}>
-            <label htmlFor="setting">Logging categories</label>
-            <TextField value={stripes.logger.categories} onChange={e => this.onChange(e)} />
-          </Col>
-         </HotKeys>
-        </Row>
+        <HotKeys keyMap={globalKeyMap} handlers={handlers}>
+          <Row>
+            <Col xs={12}>
+              <label htmlFor="setting">Logging categories</label>
+              <TextField value={stripes.logger.categories} onChange={e => this.onChange(e)} />
+            </Col>
+          </Row>
+        </HotKeys>
       </Pane>
     );
   }
