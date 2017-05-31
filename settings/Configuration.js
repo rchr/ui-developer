@@ -22,7 +22,7 @@ class Configuration extends React.Component {
     }).isRequired,
   };
 
-  onChange(e) {
+  onChangeLoggingCategories(e) {
     const stripes = this.context.stripes;
     const cat = e.target.value;
     stripes.logger.categories = cat;
@@ -54,8 +54,8 @@ class Configuration extends React.Component {
         <HotKeys keyMap={globalKeyMap} handlers={handlers}>
           <Row>
             <Col xs={12}>
-              <label htmlFor="setting">Logging categories</label>
-              <TextField value={stripes.logger.categories} onChange={e => this.onChange(e)} />
+              <label htmlFor="settingLoggingCategories">Logging categories</label>
+              <TextField value={stripes.logger.categories} onChange={e => this.onChangeLoggingCategories(e)} />
             </Col>
           </Row>
         </HotKeys>
