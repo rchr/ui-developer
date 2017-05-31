@@ -1,3 +1,4 @@
+import _ from 'lodash';
 // We have to remove node_modules/react to avoid having multiple copies loaded.
 // eslint-disable-next-line import/no-unresolved
 import React, { PropTypes } from 'react';
@@ -22,27 +23,12 @@ class Configuration extends React.Component {
     }).isRequired,
   };
 
-  onChangeLoggingCategories(e) {
+  onChange(e, path, caption) {
     const stripes = this.context.stripes;
-    const cat = e.target.value;
-    stripes.logger.categories = cat;
-    stripes.logger.log('action', `changed logging categories to '${cat}'`);
-    this.forceUpdate();
-  }
-
-  onChangeAutoLoginUsername(e) {
-    const stripes = this.context.stripes;
+    const lastComponent = path.pop();
     const val = e.target.value;
-    stripes.config.autoLogin.username = val;
-    stripes.logger.log('action', `changed autoLogin username to '${val}'`);
-    this.forceUpdate();
-  }
-
-  onChangeAutoLoginPassword(e) {
-    const stripes = this.context.stripes;
-    const val = e.target.value;
-    stripes.config.autoLogin.password = val;
-    stripes.logger.log('action', `changed autoLogin password to '${val}'`);
+    _.get(stripes, path)[lastComponent] = val;
+    stripes.logger.log('action', `changed ${caption} (${path.join('.')}.${lastComponent}) to '${val}'`);
     this.forceUpdate();
   }
 
@@ -73,20 +59,23 @@ class Configuration extends React.Component {
           <Row>
             <Col xs={12}>
               <label htmlFor="settingLoggingCategories">Logging categories</label>
-              <TextField value={stripes.logger.categories} onChange={e => this.onChangeLoggingCategories(e)} />
+              <TextField value={stripes.logger.categories}
+                         onChange={e => this.onChange(e, ['logger', 'categories'], 'logging categories')} />
             </Col>
           </Row>
           <hr/>
           <Row>
             <Col xs={12}>
               <label htmlFor="settingAutoLoginUsername">Auto-login username</label>
-              <TextField value={stripes.config.autoLogin.username} onChange={e => this.onChangeAutoLoginUsername(e)} />
+              <TextField value={stripes.config.autoLogin.username}
+                         onChange={e => this.onChange(e, ['config', 'autoLogin', 'username'], 'autoLogin username')} />
             </Col>
           </Row>
           <Row>
             <Col xs={12}>
               <label htmlFor="settingAutoLoginPassword">Auto-login password</label>
-              <TextField value={stripes.config.autoLogin.password} onChange={e => this.onChangeAutoLoginPassword(e)} />
+              <TextField value={stripes.config.autoLogin.password}
+                         onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'], 'autoLogin password')} />
             </Col>
           </Row>
         </HotKeys>
