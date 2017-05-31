@@ -59,23 +59,29 @@ class Configuration extends React.Component {
           <Row>
             <Col xs={12}>
               <label htmlFor="settingLoggingCategories">Logging categories</label>
-              <TextField value={stripes.logger.categories}
-                         onChange={e => this.onChange(e, ['logger', 'categories'], 'logging categories')} />
+              <TextField
+                value={stripes.logger.categories}
+                onChange={e => this.onChange(e, ['logger', 'categories'], 'logging categories')}
+              />
             </Col>
           </Row>
-          <hr/>
+          <hr />
           <Row>
             <Col xs={12}>
               <label htmlFor="settingAutoLoginUsername">Auto-login username</label>
-              <TextField value={stripes.config.autoLogin.username}
-                         onChange={e => this.onChange(e, ['config', 'autoLogin', 'username'], 'autoLogin username')} />
+              <TextField
+                value={stripes.config.autoLogin.username}
+                onChange={e => this.onChange(e, ['config', 'autoLogin', 'username'], 'autoLogin username')}
+              />
             </Col>
           </Row>
           <Row>
             <Col xs={12}>
               <label htmlFor="settingAutoLoginPassword">Auto-login password</label>
-              <TextField value={stripes.config.autoLogin.password}
-                         onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'], 'autoLogin password')} />
+              <TextField
+                value={stripes.config.autoLogin.password}
+                onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'], 'autoLogin password')}
+              />
             </Col>
           </Row>
         </HotKeys>
