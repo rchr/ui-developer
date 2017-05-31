@@ -30,8 +30,26 @@ class Configuration extends React.Component {
     this.forceUpdate();
   }
 
+  onChangeAutoLoginUsername(e) {
+    const stripes = this.context.stripes;
+    const val = e.target.value;
+    stripes.config.autoLogin.username = val;
+    stripes.logger.log('action', `changed autoLogin username to '${val}'`);
+    this.forceUpdate();
+  }
+
+  onChangeAutoLoginPassword(e) {
+    const stripes = this.context.stripes;
+    const val = e.target.value;
+    stripes.config.autoLogin.password = val;
+    stripes.logger.log('action', `changed autoLogin password to '${val}'`);
+    this.forceUpdate();
+  }
+
   render() {
     const stripes = this.context.stripes;
+    if (!stripes.config.autoLogin)
+      stripes.config.autoLogin = { username: '', password: '' };
 
     const globalKeyMap = {
       stripesHome: 'command+up',
@@ -56,6 +74,19 @@ class Configuration extends React.Component {
             <Col xs={12}>
               <label htmlFor="settingLoggingCategories">Logging categories</label>
               <TextField value={stripes.logger.categories} onChange={e => this.onChangeLoggingCategories(e)} />
+            </Col>
+          </Row>
+          <hr/>
+          <Row>
+            <Col xs={12}>
+              <label htmlFor="settingAutoLoginUsername">Auto-login username</label>
+              <TextField value={stripes.config.autoLogin.username} onChange={e => this.onChangeAutoLoginUsername(e)} />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <label htmlFor="settingAutoLoginPassword">Auto-login password</label>
+              <TextField value={stripes.config.autoLogin.password} onChange={e => this.onChangeAutoLoginPassword(e)} />
             </Col>
           </Row>
         </HotKeys>
