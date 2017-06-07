@@ -3,7 +3,7 @@ import _ from 'lodash';
 // eslint-disable-next-line import/no-unresolved
 import React, { PropTypes } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { HotKeys } from 'react-hotkeys';
+import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
 import Pane from '@folio/stripes-components/lib/Pane';
 import TextField from '@folio/stripes-components/lib/TextField';
 import Checkbox from '@folio/stripes-components/lib/Checkbox';
@@ -86,8 +86,8 @@ class Configuration extends React.Component {
     };
 
     return (
-      <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
-        <HotKeys keyMap={globalKeyMap} handlers={handlers}>
+      <HotKeys keyMap={globalKeyMap} handlers={handlers} noWrapper>
+        <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
           <Entry
             htmlFor="1"
             caption="Logging categories"
@@ -126,8 +126,8 @@ class Configuration extends React.Component {
             value={stripes.config.hasAllPerms}
             onChange={e => this.onChange(e, ['config', 'hasAllPerms'], true)} isBool
           />
-        </HotKeys>
-      </Pane>
+        </Pane>
+      </HotKeys>
     );
   }
 }
