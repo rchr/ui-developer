@@ -6,6 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 import { HotKeys } from 'react-hotkeys';
 import Pane from '@folio/stripes-components/lib/Pane';
 import TextField from '@folio/stripes-components/lib/TextField';
+import Checkbox from '@folio/stripes-components/lib/Checkbox';
 
 class Configuration extends React.Component {
   static propTypes = {
@@ -23,10 +24,11 @@ class Configuration extends React.Component {
     }).isRequired,
   };
 
-  onChange(e, path, caption) {
+  onChange(e, path, caption, isBool) {
     const stripes = this.context.stripes;
     const lastComponent = path.pop();
-    const val = e.target.value;
+    const val = isBool ? e.target.checked : e.target.value;
+
     _.get(stripes, path)[lastComponent] = val;
     stripes.logger.log('action', `changed ${caption} (${path.join('.')}.${lastComponent}) to '${val}'`);
     this.forceUpdate();
@@ -52,6 +54,8 @@ class Configuration extends React.Component {
         this.props.history.push('/about');
       },
     };
+
+    console.log(`showPerms=${stripes.config.showPerms}, listInvisiblePerms=${stripes.config.listInvisiblePerms}, hasAllPerms=${stripes.config.hasAllPerms}`);
 
     return (
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
@@ -81,6 +85,34 @@ class Configuration extends React.Component {
               <TextField
                 value={stripes.config.autoLogin.password}
                 onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'], 'autoLogin password')}
+              />
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col xs={12}>
+              <label htmlFor="settingShowPerms">Show permissions in user menu?</label>
+              <Checkbox
+                checked={stripes.config.showPerms}
+                onChange={e => this.onChange(e, ['config', 'showPerms'], 'show permissions', true)}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <label htmlFor="settingListInvisiblePerms">List "invisible" permissions in add-perm menus?</label>
+              <Checkbox
+                checked={stripes.config.listInvisiblePerms}
+                onChange={e => this.onChange(e, ['config', 'listInvisiblePerms'], 'list invisible permissions', true)}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <label htmlFor="settingHasAllPerms">Act as though user had all permissions</label>
+              <Checkbox
+                checked={stripes.config.hasAllPerms}
+                onChange={e => this.onChange(e, ['config', 'hasAllPerms'], 'has all permissions', true)}
               />
             </Col>
           </Row>
