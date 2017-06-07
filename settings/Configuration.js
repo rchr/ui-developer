@@ -88,14 +88,44 @@ class Configuration extends React.Component {
     return (
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
         <HotKeys keyMap={globalKeyMap} handlers={handlers}>
-          <Entry htmlFor="1" caption="Logging categories" value={stripes.logger.categories} onChange={e => this.onChange(e, ['logger', 'categories'])} />
+          <Entry
+            htmlFor="1"
+            caption="Logging categories"
+            value={stripes.logger.categories}
+            onChange={e => this.onChange(e, ['logger', 'categories'])}
+          />
           <hr />
-          <Entry htmlFor="2" caption="Auto-login username" value={stripes.config.autoLogin.username} onChange={e => this.onChange(e, ['config', 'autoLogin', 'username'])} />
-          <Entry htmlFor="3" caption="Auto-login password" value={stripes.config.autoLogin.password} onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'])} />
+          <Entry
+            htmlFor="2"
+            caption="Auto-login username"
+            value={stripes.config.autoLogin.username}
+            onChange={e => this.onChange(e, ['config', 'autoLogin', 'username'])}
+          />
+          <Entry
+            htmlFor="3"
+            caption="Auto-login password"
+            value={stripes.config.autoLogin.password}
+            onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'])}
+          />
           <hr />
-          <Entry htmlFor="4" caption="Show permissions in user menu?" value={stripes.config.showPerms} onChange={e => this.onChange(e, ['config', 'showPerms'], true)} isBool />
-          <Entry htmlFor="5" caption="List &quot;invisible&quot; permissions in add-perm menus??" value={stripes.config.listInvisiblePerms} onChange={e => this.onChange(e, ['config', 'listInvisiblePerms'], true)} isBool />
-          <Entry htmlFor="6" caption="Act as though user has all permissions" value={stripes.config.hasAllPerms} onChange={e => this.onChange(e, ['config', 'hasAllPerms'], true)} isBool />
+          <Entry
+            htmlFor="4"
+            caption="Show permissions in user menu?"
+            value={stripes.config.showPerms}
+            onChange={e => this.onChange(e, ['config', 'showPerms'], true)} isBool
+          />
+          <Entry
+            htmlFor="5"
+            caption="List &quot;invisible&quot; permissions in add-perm menus??"
+            value={stripes.config.listInvisiblePerms}
+            onChange={e => this.onChange(e, ['config', 'listInvisiblePerms'], true)} isBool
+          />
+          <Entry
+            htmlFor="6"
+            caption="Act as though user has all permissions"
+            value={stripes.config.hasAllPerms}
+            onChange={e => this.onChange(e, ['config', 'hasAllPerms'], true)} isBool
+          />
         </HotKeys>
       </Pane>
     );
