@@ -55,8 +55,6 @@ class Configuration extends React.Component {
       },
     };
 
-    console.log(`showPerms=${stripes.config.showPerms}, listInvisiblePerms=${stripes.config.listInvisiblePerms}, hasAllPerms=${stripes.config.hasAllPerms}`);
-
     return (
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
         <HotKeys keyMap={globalKeyMap} handlers={handlers}>
