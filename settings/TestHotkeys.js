@@ -4,7 +4,7 @@ import React, { PropTypes } from 'react';
 import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
 import Pane from '@folio/stripes-components/lib/Pane';
 
-function TestHotkeys (props, context) {
+function TestHotkeys(props, context) {
   const globalKeyMap = {
     stripesHome: 'command+up',
     stripesAbout: 'command+down',
