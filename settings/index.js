@@ -4,12 +4,18 @@ import React from 'react';
 import Settings from '@folio/stripes-components/lib/Settings';
 
 import Configuration from './Configuration';
+import TestHotkeys from './TestHotkeys';
 
 const pages = [
   {
     route: 'configuration',
     label: 'Configuration',
     component: Configuration,
+  },
+  {
+    route: 'hotkeys',
+    label: 'Hotkeys Test',
+    component: TestHotkeys,
   },
 ];
 
