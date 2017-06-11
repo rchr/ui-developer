@@ -5,6 +5,7 @@ import Settings from '@folio/stripes-components/lib/Settings';
 
 import Configuration from './Configuration';
 import TestHotkeys from './TestHotkeys';
+import TestPlugin from './TestPlugin';
 
 const pages = [
   {
@@ -16,6 +17,11 @@ const pages = [
     route: 'hotkeys',
     label: 'Hotkeys Test',
     component: TestHotkeys,
+  },
+  {
+    route: 'plugin',
+    label: 'Plugin Test',
+    component: TestPlugin,
   },
 ];
 
