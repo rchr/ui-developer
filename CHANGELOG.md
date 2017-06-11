@@ -1,5 +1,12 @@
 # Change history for ui-developer
 
+## [1.1.0](https://github.com/folio-org/ui-developer/tree/v1.1.0) (IN PROGRESS)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.0.0...v1.1.0)
+
+* Add new "HotKeys Test" settings area.
+* Rip old HotKeys testing code out of Configuration area.
+* Add new "Plugin Test" settings area.
+
 ## [1.0.0](https://github.com/folio-org/ui-developer/tree/v1.0.0) (2017-06-08)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v0.1.0...v1.0.0)
 
