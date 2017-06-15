@@ -25,4 +25,4 @@ const pages = [
   },
 ];
 
-export default props => <Settings {...props} pages={pages} />;
+export default props => <Settings {...props} pages={pages} paneTitle='Developer' />;
