@@ -16,6 +16,7 @@ function TestHotkeys(props, context) {
     },
   };
 
+  const bindings = context.stripes.bindings || {};
   return (
     <HotKeys handlers={handlers} noWrapper>
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={props.label}>
@@ -23,8 +24,8 @@ function TestHotkeys(props, context) {
           When this area is focussed, type:
         </p>
         <ul>
-          <li><tt>command+up</tt> to go to the Home page</li>
-          <li><tt>command+down</tt> to go to the About page</li>
+          <li><tt>{bindings.stripesHome || '[undefined]'}</tt> to go to the Home page</li>
+          <li><tt>{bindings.stripesAbout || '[undefined]'}</tt> to go to the About page</li>
         </ul>
       </Pane>
     </HotKeys>
