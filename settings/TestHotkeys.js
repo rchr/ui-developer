@@ -5,11 +5,6 @@ import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
 import Pane from '@folio/stripes-components/lib/Pane';
 
 function TestHotkeys(props, context) {
-  const globalKeyMap = {
-    stripesHome: 'command+up',
-    stripesAbout: 'command+down',
-  };
-
   const handlers = {
     stripesHome: () => {
       context.stripes.logger.log('action', 'handler for stripesHome: going to /');
@@ -22,7 +17,7 @@ function TestHotkeys(props, context) {
   };
 
   return (
-    <HotKeys keyMap={globalKeyMap} handlers={handlers} noWrapper>
+    <HotKeys handlers={handlers} noWrapper>
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={props.label}>
         <p>
           When this area is focussed, type:
