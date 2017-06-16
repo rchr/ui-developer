@@ -25,4 +25,12 @@ const pages = [
   },
 ];
 
-export default props => <Settings {...props} pages={pages} paneTitle='Developer' />;
+class DeveloperSettings extends React.Component {
+  static actionNames = ['stripesHome', 'stripesAbout'];
+
+  render() {
+    return <Settings {...this.props} pages={pages} paneTitle="Developer" />;
+  }
+}
+
+export default DeveloperSettings;
