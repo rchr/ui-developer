@@ -1,5 +1,11 @@
 # Change history for ui-developer
 
+## [1.2.0](https://github.com/folio-org/ui-developer/tree/v1.2.0) (2017-06-19)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.1.0...v1.2.0)
+
+* Hot-keys test page now uses the key bindings provided by stripes-core rather than a hardwired set of bindings. Fixes STRIPES-424.
+* Hot-keys module specifies `actionNames` for stripes-core's aggregation. Relates to STRPCORE-2.
+
 ## [1.1.0](https://github.com/folio-org/ui-developer/tree/v1.1.0) (2017-06-11)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.0.0...v1.1.0)
 
