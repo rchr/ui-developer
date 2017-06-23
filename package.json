@@ -14,6 +14,14 @@
     "type": "settings",
     "displayName": "Developer",
     "route": "/developer"
+    "okapiInterfaces": {
+    },
+    "permissionSets": [
+      {
+        "permissionName": "module.developer.enabled",
+        "displayName": "UI: Developer module is enabled"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint *.js settings || true"
