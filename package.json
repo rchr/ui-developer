@@ -13,7 +13,7 @@
   "stripes": {
     "type": "settings",
     "displayName": "Developer",
-    "route": "/developer"
+    "route": "/developer",
     "okapiInterfaces": {
     },
     "permissionSets": [
