@@ -1,5 +1,3 @@
-// We have to remove node_modules/react to avoid having multiple copies loaded.
-// eslint-disable-next-line import/no-unresolved
 import React, { PropTypes } from 'react';
 import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
 import Pane from '@folio/stripes-components/lib/Pane';
