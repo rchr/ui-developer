@@ -3,6 +3,7 @@
 ## 1.3.0 IN PROGRESS
 
 * Add okapiInterfaces and permissionSets to package.json. Fixes UID-1.
+* New developer settings page for setting the authentication token. Fixes UID-2.
 
 ## [1.2.0](https://github.com/folio-org/ui-developer/tree/v1.2.0) (2017-06-19)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.1.0...v1.2.0)

@@ -105,4 +105,5 @@ class Configuration extends React.Component {
   }
 }
 
+export { Entry };
 export default Configuration;
