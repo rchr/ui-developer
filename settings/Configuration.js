@@ -68,6 +68,7 @@ class Configuration extends React.Component {
           value={stripes.logger.categories}
           onChange={e => this.onChange(e, ['logger', 'categories'])}
         />
+        (See <a href="https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger">the documentation</a> for available levels.)
         <hr />
         <Entry
           htmlFor="2"
