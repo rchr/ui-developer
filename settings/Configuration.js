@@ -90,13 +90,13 @@ class Configuration extends React.Component {
         />
         <Entry
           htmlFor="5"
-          caption="List &quot;invisible&quot; permissions in add-perm menus??"
+          caption="List &quot;invisible&quot; permissions in add-perm menus?"
           value={stripes.config.listInvisiblePerms}
           onChange={e => this.onChange(e, ['config', 'listInvisiblePerms'], true)} isBool
         />
         <Entry
           htmlFor="6"
-          caption="Act as though user has all permissions"
+          caption="Act as though user has all permissions?"
           value={stripes.config.hasAllPerms}
           onChange={e => this.onChange(e, ['config', 'hasAllPerms'], true)} isBool
         />
