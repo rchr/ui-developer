@@ -14,6 +14,7 @@
     "type": "settings",
     "displayName": "Developer",
     "route": "/developer",
+    "actionNames": ["stripesHome", "stripesAbout"],
     "okapiInterfaces": {
     },
     "permissionSets": [
