@@ -29,7 +29,7 @@ Entry.propTypes = {
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool,
-  ]).isRequired,
+  ]),
   onChange: PropTypes.func.isRequired,
   isBool: PropTypes.bool,
 };
