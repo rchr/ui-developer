@@ -6,6 +6,7 @@
 * New developer settings page for setting the authentication token. Fixes UID-2.
 * Use new-style specification of action-names. Fixes UID-3
 * Update stripes-components to 1.4.0.
+* Add new permission, `settings.developer.enabled`. Fixes UID-8.
 
 ## [1.2.0](https://github.com/folio-org/ui-developer/tree/v1.2.0) (2017-06-19)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.1.0...v1.2.0)
