@@ -3,6 +3,7 @@
 ## [1.4.0] (IN PROGRESS)
 
 * Use PropTypes, not React.PropTypes. Refs STRIPES-427.
+* Use more-current stripes-components. Refs STRIPES-495.
 
 ## [1.3.0](https://github.com/folio-org/ui-developer/tree/v1.3.0) (2017-09-01)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.2.0...v1.3.0)
