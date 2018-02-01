@@ -1,40 +1,11 @@
-import _ from 'lodash';
+import { merge } from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from '@folio/stripes-components/lib/LayoutGrid';
-import Pane from '@folio/stripes-components/lib/Pane';
 import TextField from '@folio/stripes-components/lib/TextField';
 import Checkbox from '@folio/stripes-components/lib/Checkbox';
-
-
-const Entry = (props) => {
-  const { htmlFor, caption, value, onChange, isBool } = props;
-  const fullFor = `dev-settings-config-${htmlFor}`;
-  return (
-    <Row>
-      <Col xs={12}>
-        <label htmlFor={fullFor}>{caption}</label>
-        {isBool ?
-          <Checkbox id="{fullFor}" checked={value} onChange={onChange} />
-          :
-          <TextField id={fullFor} value={value} onChange={onChange} />
-        }
-      </Col>
-    </Row>
-  );
-};
-
-Entry.propTypes = {
-  htmlFor: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired,
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.bool,
-  ]),
-  onChange: PropTypes.func.isRequired,
-  isBool: PropTypes.bool,
-};
-
+import ConfigForm from '@folio/stripes-smart-components/lib/ConfigManager/ConfigForm';
+import { Field } from 'redux-form';
 
 class Configuration extends React.Component {
   static propTypes = {
@@ -46,13 +17,14 @@ class Configuration extends React.Component {
     }).isRequired,
   };
 
-  onChange(e, path, isBool) {
-    const stripes = this.props.stripes;
-    const lastComponent = path.pop();
-    const val = isBool ? e.target.checked : e.target.value;
+  constructor() {
+    super();
+    this.onSave = this.onSave.bind(this);
+  }
 
-    _.get(stripes, path)[lastComponent] = val;
-    stripes.logger.log('action', `changed ${path.join('.')}.${lastComponent} to '${val}'`);
+  onSave(data) {
+    const stripes = this.props.stripes;
+    merge(stripes, data);
     this.forceUpdate();
   }
 
@@ -61,51 +33,74 @@ class Configuration extends React.Component {
     if (!stripes.config.autoLogin)
       stripes.config.autoLogin = { username: '', password: '' };
 
+    const initialValues = {
+      logger: {
+        categories: stripes.logger.categories,
+      },
+      config: {
+        showPerms: stripes.config.showPerms || false,
+        listInvisiblePerms: stripes.config.listInvisiblePerms || false,
+        hasAllPerms: stripes.config.hasAllPerms || false,
+        autoLogin: {
+          username: stripes.config.autoLogin.username,
+          password: stripes.config.autoLogin.password,
+        },
+      },
+    };
+
     return (
-      <Pane defaultWidth="fill" fluidContentWidth paneTitle={this.props.label}>
-        <Entry
-          htmlFor="1"
-          caption="Logging categories"
-          value={stripes.logger.categories}
-          onChange={e => this.onChange(e, ['logger', 'categories'])}
-        />
-        (See <a href="https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger">the documentation</a> for available levels.)
-        <hr />
-        <Entry
-          htmlFor="2"
-          caption="Auto-login username"
-          value={stripes.config.autoLogin.username}
-          onChange={e => this.onChange(e, ['config', 'autoLogin', 'username'])}
-        />
-        <Entry
-          htmlFor="3"
-          caption="Auto-login password"
-          value={stripes.config.autoLogin.password}
-          onChange={e => this.onChange(e, ['config', 'autoLogin', 'password'])}
-        />
-        <hr />
-        <Entry
-          htmlFor="4"
-          caption="Show permissions in user menu?"
-          value={stripes.config.showPerms}
-          onChange={e => this.onChange(e, ['config', 'showPerms'], true)} isBool
-        />
-        <Entry
-          htmlFor="5"
-          caption="List &quot;invisible&quot; permissions in add-perm menus?"
-          value={stripes.config.listInvisiblePerms}
-          onChange={e => this.onChange(e, ['config', 'listInvisiblePerms'], true)} isBool
-        />
-        <Entry
-          htmlFor="6"
-          caption="Act as though user has all permissions?"
-          value={stripes.config.hasAllPerms}
-          onChange={e => this.onChange(e, ['config', 'hasAllPerms'], true)} isBool
-        />
-      </Pane>
+      <div style={{ width: '100%' }}>
+        <ConfigForm onSubmit={this.onSave} label={this.props.label} initialValues={initialValues}>
+          <Row>
+            <Col xs={12}>
+              <Field
+                htmlFor="1"
+                component={TextField}
+                name="logger.categories"
+                label="Logging categories"
+              />
+              (See <a href="https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger">the documentation</a> for available levels.)
+              <hr />
+              <Field
+                htmlFor="2"
+                component={TextField}
+                name="config.autoLogin.username"
+                label="Auto-login username"
+              />
+              <Field
+                htmlFor="3"
+                component={TextField}
+                name="config.autoLogin.password"
+                label="Auto-login password"
+              />
+              <hr />
+              <Field
+                htmlFor="4"
+                component={Checkbox}
+                name="config.showPerms"
+                id="config.showPerms"
+                label="Show permissions in user menu?"
+              />
+              <Field
+                htmlFor="5"
+                component={Checkbox}
+                name="config.listInvisiblePerms"
+                id="config.listInvisiblePerms"
+                label="List &quot;invisible&quot; permissions in add-perm menus?"
+              />
+              <Field
+                htmlFor="6"
+                component={Checkbox}
+                name="config.hasAllPerms"
+                id="config.hasAllPerms"
+                label="Act as though user has all permissions?"
+              />
+            </Col>
+          </Row>
+        </ConfigForm>
+      </div>
     );
   }
 }
 
-export { Entry };
 export default Configuration;
