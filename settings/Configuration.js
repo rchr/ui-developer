@@ -30,8 +30,7 @@ class Configuration extends React.Component {
 
   render() {
     const stripes = this.props.stripes;
-    if (!stripes.config.autoLogin)
-      stripes.config.autoLogin = { username: '', password: '' };
+    if (!stripes.config.autoLogin) { stripes.config.autoLogin = { username: '', password: '' }; }
 
     const initialValues = {
       logger: {
