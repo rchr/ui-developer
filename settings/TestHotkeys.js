@@ -2,25 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
 import Pane from '@folio/stripes-components/lib/Pane';
+import { withStripes } from '@folio/stripes-core/src/StripesContext';
 
-function TestHotkeys(props, context) {
+function TestHotkeys(props) {
   const handlers = {
     stripesHome: () => {
-      context.stripes.logger.log('action', 'handler for stripesHome: going to /');
+      props.stripes.logger.log('action', 'handler for stripesHome: going to /');
       props.history.push('/');
     },
     stripesAbout: () => {
-      context.stripes.logger.log('action', 'handler for stripesAbout: going to /about');
+      props.stripes.logger.log('action', 'handler for stripesAbout: going to /about');
       props.history.push('/about');
     },
   };
 
-  const bindings = context.stripes.bindings || {};
+  const bindings = props.stripes.bindings || {};
   return (
     <HotKeys handlers={handlers} noWrapper>
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={props.label}>
         <p>
-          When this area is focussed, type:
+          When this area is focused, type:
         </p>
         <ul>
           <li><tt>{bindings.stripesHome || '[undefined]'}</tt> to go to the Home page</li>
@@ -36,14 +37,15 @@ TestHotkeys.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
-};
-
-TestHotkeys.contextTypes = {
   stripes: PropTypes.shape({
+    bindings: PropTypes.shape({
+      stripesAbout: PropTypes.string,
+      stripesHome: PropTypes.string,
+    }),
     logger: PropTypes.shape({
       log: PropTypes.func.isRequired,
     }).isRequired,
   }).isRequired,
 };
 
-export default TestHotkeys;
+export default withStripes(TestHotkeys);
