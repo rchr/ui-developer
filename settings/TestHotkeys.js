@@ -38,6 +38,10 @@ TestHotkeys.propTypes = {
     push: PropTypes.func.isRequired,
   }).isRequired,
   stripes: PropTypes.shape({
+    bindings: PropTypes.shape({
+      stripesAbout: PropTypes.string,
+      stripesHome: PropTypes.string,
+    }),
     logger: PropTypes.shape({
       log: PropTypes.func.isRequired,
     }).isRequired,
