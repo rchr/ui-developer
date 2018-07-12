@@ -12,7 +12,7 @@
   },
   "stripes": {
     "type": "settings",
-    "displayName": "Developer",
+    "displayName": "ui-developer.meta.title",
     "route": "/developer",
     "actionNames": [
       "stripesHome",
