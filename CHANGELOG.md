@@ -6,7 +6,8 @@
 * Use more-current stripes-components. Refs STRIPES-495.
 * Use more-current stripes-connect. Refs STRIPES-501.
 * Add save buttons to settings pages. Fixes UID-11.
-* Ignore yarn-error.log file. Refs STRIPES-517. 
+* Ignore yarn-error.log file. Refs STRIPES-517.
+* stripes-components dep consistent with stripes-core's.
 
 ## [1.3.0](https://github.com/folio-org/ui-developer/tree/v1.3.0) (2017-09-01)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.2.0...v1.3.0)
