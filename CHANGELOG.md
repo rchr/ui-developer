@@ -1,13 +1,16 @@
 # Change history for ui-developer
 
-## [1.4.0] (IN PROGRESS)
+## [1.4.0](https://github.com/folio-org/ui-developer/tree/v1.4.0) (2018-09-03)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.3.0...v1.4.0)
 
 * Use PropTypes, not React.PropTypes. Refs STRIPES-427.
 * Use more-current stripes-components. Refs STRIPES-495.
 * Use more-current stripes-connect. Refs STRIPES-501.
 * Add save buttons to settings pages. Fixes UID-11.
 * Ignore yarn-error.log file. Refs STRIPES-517.
-* stripes-components dep consistent with stripes-core's.
+* Support for localisation, and some elementary locale files.
+* Add elementary Jenkins support (`yarn test` does nothing).
+* Simplify ESLint configuration, relying on `eslint-config-stripes`.
 
 ## [1.3.0](https://github.com/folio-org/ui-developer/tree/v1.3.0) (2017-09-01)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.2.0...v1.3.0)
