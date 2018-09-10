@@ -58,7 +58,6 @@
     "@folio/stripes-smart-components": "^1.4.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
-    "react-hotkeys": "^0.10.0",
     "react-router-dom": "^4.0.0",
     "redux-form": "^7.0.3"
   },
