@@ -24,8 +24,20 @@ function TestHotkeys(props) {
           When this area is focused, type:
         </p>
         <ul>
-          <li><tt>{bindings.stripesHome || '[undefined]'}</tt> to go to the Home page</li>
-          <li><tt>{bindings.stripesAbout || '[undefined]'}</tt> to go to the About page</li>
+          <li>
+            <tt>
+              {bindings.stripesHome || '[undefined]'}
+            </tt>
+            {' '}
+            to go to the Home page
+          </li>
+          <li>
+            <tt>
+              {bindings.stripesAbout || '[undefined]'}
+            </tt>
+            {' '}
+            to go to the About page
+          </li>
         </ul>
       </Pane>
     </HotKeys>
