@@ -35,11 +35,13 @@
     ]
   },
   "scripts": {
+    "start": "stripes serve",
     "lint": "eslint *.js settings",
     "test": "echo 'placeholder. no tests implemented'"
   },
   "devDependencies": {
     "@folio/eslint-config-stripes": "^3.0.0",
+    "@folio/stripes-cli": "^1.4.0",
     "@folio/stripes-connect": "^3.1.0",
     "@folio/stripes-core": "^2.7.0",
     "@folio/stripes-logger": "^0.0.2",
