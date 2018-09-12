@@ -58,7 +58,11 @@ class Configuration extends React.Component {
                 name="logger.categories"
                 label="Logging categories"
               />
-              (See <a href="https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger">the documentation</a> for available levels.)
+              (See
+              {' '}
+              <a href="https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger">the documentation</a>
+              {' '}
+              for available levels.)
               <hr />
               <Field
                 htmlFor="2"

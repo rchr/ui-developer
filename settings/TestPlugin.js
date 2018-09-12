@@ -11,7 +11,12 @@ function TestPlugin(props) {
         <Pluggable type="markdown-editor">
           <div style={{ background: 'red' }}>[Markdown editor goes here]</div>
         </Pluggable>
-        <p>To change the preferred plugin, go <Link to="/settings/organization/plugins">here</Link>.</p>
+        <p>
+          To change the preferred plugin, go
+          {' '}
+          <Link to="/settings/organization/plugins">here</Link>
+          .
+        </p>
       </div>
     </Pane>
   );
