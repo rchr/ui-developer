@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'react-router-dom/Link';
-import Pane from '@folio/stripes-components/lib/Pane';
-import { Pluggable } from '@folio/stripes-core';
+import { Pane } from '@folio/stripes/components';
+import { Pluggable } from '@folio/stripes/core';
 
 function TestPlugin(props) {
   return (

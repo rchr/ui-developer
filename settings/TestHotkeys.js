@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
-import Pane from '@folio/stripes-components/lib/Pane';
-import { withStripes } from '@folio/stripes-core/src/StripesContext';
+import { HotKeys, Pane } from '@folio/stripes/components';
+import { withStripes } from '@folio/stripes/core';
 
 function TestHotkeys(props) {
   const handlers = {
