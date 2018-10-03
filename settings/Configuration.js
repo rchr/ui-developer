@@ -1,11 +1,9 @@
 import { merge } from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col } from '@folio/stripes-components/lib/LayoutGrid';
-import TextField from '@folio/stripes-components/lib/TextField';
-import Checkbox from '@folio/stripes-components/lib/Checkbox';
-import ConfigForm from '@folio/stripes-smart-components/lib/ConfigManager/ConfigForm';
 import { Field } from 'redux-form';
+import { Checkbox, Col, Row, TextField } from '@folio/stripes/components';
+import { ConfigForm } from '@folio/stripes/smart-components';
 
 class Configuration extends React.Component {
   static propTypes = {

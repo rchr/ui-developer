@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ConfigForm from '@folio/stripes-smart-components/lib/ConfigManager/ConfigForm';
-import { Row, Col } from '@folio/stripes-components/lib/LayoutGrid';
-import TextField from '@folio/stripes-components/lib/TextField';
 import { Field } from 'redux-form';
+import { ConfigForm } from '@folio/stripes/smart-components';
+import { Col, Row, TextField } from '@folio/stripes/components';
 
 class Token extends React.Component {
   static propTypes = {

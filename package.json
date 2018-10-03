@@ -1,6 +1,6 @@
 {
   "name": "@folio/developer",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Developer settings",
   "repository": "folio-org/ui-developer",
   "publishConfig": {
@@ -41,10 +41,8 @@
   },
   "devDependencies": {
     "@folio/eslint-config-stripes": "^3.2.1",
+    "@folio/stripes": "^1.0.0",
     "@folio/stripes-cli": "^1.4.0",
-    "@folio/stripes-connect": "^3.1.0",
-    "@folio/stripes-core": "^2.13.0",
-    "@folio/stripes-logger": "^0.0.2",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.5.0",
     "react": "^16.5.0",
@@ -53,17 +51,13 @@
     "redux": "^4.0.0"
   },
   "dependencies": {
-    "@folio/stripes-components": "^3.0.0",
-    "@folio/stripes-smart-components": "^1.8.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react-router-dom": "^4.0.0",
     "redux-form": "^7.0.3"
   },
   "peerDependencies": {
-    "@folio/stripes-connect": "^3.1.0",
-    "@folio/stripes-core": "^2.13.0",
-    "@folio/stripes-logger": "^0.0.2",
+    "@folio/stripes": "^1.0.0",
     "react": "*"
   }
 }
