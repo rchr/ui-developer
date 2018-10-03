@@ -1,5 +1,11 @@
 # Change history for ui-developer
 
+## [1.5.0](https://github.com/folio-org/ui-developer/tree/v1.5.0) (2018-10-03)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.4.0...v1.5.0)
+
+* Use `stripes` 1.0 framework
+
+
 ## [1.4.0](https://github.com/folio-org/ui-developer/tree/v1.4.0) (2018-09-03)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.3.0...v1.4.0)
 
@@ -45,4 +51,3 @@
 ## [0.1.0](https://github.com/folio-org/ui-developer/tree/v0.1.0) (2017-05-22)
 
 * The first formal release.
-
