@@ -31,8 +31,9 @@
                                                        parentCredentials: false,
                                                        recursiveSubmodules: true,
                                                        reference: '',
-                                                       relativeTargetDir: env.JOB_BASE_NAME,
-                                                       trackingSubmodules: false]],
+                                                       trackingSubmodules: false],
+                                               [$class: 'RelativeTargetDirectory', 
+                                                       relativeTargetDir: env.JOB_BASE_NAME ]],
                  userRemoteConfigs: scm.userRemoteConfigs
           ])
 
