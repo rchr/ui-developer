@@ -43,7 +43,7 @@
 
           // simpleName is similar to npmName except make name okapi compliant
           def Map folioNameVerMap = foliociLib.npmSimpleNameVersion('package.json')          
-          folionameVerMap.each { key, value ->
+          folioNameVerMap.each { key, value ->
             env.folioName = key
             env.version = value
           }
