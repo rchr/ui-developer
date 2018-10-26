@@ -21,9 +21,9 @@
         stage('Checkout') {
           deleteDir()
           currentBuild.displayName = "#${env.BUILD_NUMBER}-${env.JOB_BASE_NAME}"
-          sendNotifications 'STARTED'
+          //sendNotifications 'STARTED'
 
-          def retval = checkout([
+          checkout([
                  $class: 'GitSCM',
                  branches: scm.branches,
                  extensions: scm.extensions + [[$class: 'SubmoduleOption',
@@ -31,14 +31,11 @@
                                                        parentCredentials: false,
                                                        recursiveSubmodules: true,
                                                        reference: '',
+                                                       relativeTargetDir: env.JOB_BASE_NAME,
                                                        trackingSubmodules: false]],
                  userRemoteConfigs: scm.userRemoteConfigs
           ])
 
-          echo "Checked out branch: $env.BRANCH_NAME"
-          retval.each{ k, v -> println "${k}:${v}" }
-
-          // the actual NPM package name as defined in package.json
           env.npmName = foliociLib.npmName('package.json')
 
           // simpleName is similar to npmName except make name okapi compliant
