@@ -21,7 +21,7 @@
           currentBuild.displayName = "#${env.BUILD_NUMBER}-${env.JOB_BASE_NAME}"
           sendNotifications 'STARTED'
 
-          checkout([
+          def retval = checkout([
                  $class: 'GitSCM',
                  branches: scm.branches,
                  extensions: scm.extensions + [[$class: 'SubmoduleOption',
@@ -34,7 +34,7 @@
           ])
 
           echo "Checked out branch: $env.BRANCH_NAME"
-          scm.each{ k, v -> println "${k}:${v}" }
+          retval.each{ k, v -> println "${k}:${v}" }
         }
     }
   }
