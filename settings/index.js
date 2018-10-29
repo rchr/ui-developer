@@ -3,7 +3,6 @@ import { Settings } from '@folio/stripes/smart-components';
 
 import Configuration from './Configuration';
 import TestHotkeys from './TestHotkeys';
-import TestPlugin from './TestPlugin';
 import Token from './Token';
 
 const pages = [
@@ -16,11 +15,6 @@ const pages = [
     route: 'hotkeys',
     label: 'Hotkeys Test',
     component: TestHotkeys,
-  },
-  {
-    route: 'plugin',
-    label: 'Plugin Test',
-    component: TestPlugin,
   },
   {
     route: 'token',
