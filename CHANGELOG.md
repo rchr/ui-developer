@@ -1,5 +1,11 @@
 # Change history for ui-developer
 
+## [1.6.0](https://github.com/folio-org/ui-developer/tree/v1.6.0) (2018-12-10)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.5.0...v1.6.0)
+
+* Remove the experimental "plugin test" page. Fixes STCOM-378.
+* Add module name to translation keys.
+
 ## [1.5.0](https://github.com/folio-org/ui-developer/tree/v1.5.0) (2018-10-03)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.4.0...v1.5.0)
 
