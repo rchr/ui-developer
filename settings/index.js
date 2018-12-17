@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
 import { Settings } from '@folio/stripes/smart-components';
 
 import Configuration from './Configuration';
@@ -31,4 +32,4 @@ class DeveloperSettings extends React.Component {
   }
 }
 
-export default DeveloperSettings;
+export default hot(module)(DeveloperSettings);
