@@ -1,6 +1,7 @@
 # Change history for ui-developer
 
-## 1.8.0 (IN PROGRESS)
+## [1.8.0](https://github.com/folio-org/ui-developer/tree/v1.8.0) (2019-03-15)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.7.0...v1.8.0)
 
 * Session locale support.
 
