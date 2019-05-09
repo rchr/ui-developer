@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import { HotKeys, Pane } from '@folio/stripes/components';
 import { withStripes } from '@folio/stripes/core';
 
@@ -20,22 +21,22 @@ function TestHotkeys(props) {
     <HotKeys handlers={handlers} noWrapper>
       <Pane defaultWidth="fill" fluidContentWidth paneTitle={props.label}>
         <p>
-          When this area is focused, type:
+          <FormattedMessage id="ui-developer.hotkeys.instructions" />
         </p>
         <ul>
           <li>
             <tt>
-              {bindings.stripesHome || '[undefined]'}
+              {bindings.stripesHome || <FormattedMessage id="ui-developer.hotkeys.undefined" />}
             </tt>
             {' '}
-            to go to the Home page
+            <FormattedMessage id="ui-developer.hotkeys.home" />
           </li>
           <li>
             <tt>
-              {bindings.stripesAbout || '[undefined]'}
+              {bindings.stripesAbout || <FormattedMessage id="ui-developer.hotkeys.undefined" />}
             </tt>
             {' '}
-            to go to the About page
+            <FormattedMessage id="ui-developer.hotkeys.about" />
           </li>
         </ul>
       </Pane>

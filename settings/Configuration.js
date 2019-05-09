@@ -2,8 +2,10 @@ import { merge } from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
+import { FormattedMessage } from 'react-intl';
 import { Checkbox, Col, Row, TextField } from '@folio/stripes/components';
 import { ConfigForm } from '@folio/stripes/smart-components';
+import SafeHTMLMessage from '@folio/react-intl-safe-html';
 
 class Configuration extends React.Component {
   static propTypes = {
@@ -54,25 +56,29 @@ class Configuration extends React.Component {
                 htmlFor="1"
                 component={TextField}
                 name="logger.categories"
-                label="Logging categories"
+                label={<FormattedMessage id="ui-developer.configuration.loggingCategories" />}
               />
-              (See
-              {' '}
-              <a href="https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger">the documentation</a>
-              {' '}
-              for available levels.)
+              (
+              <SafeHTMLMessage
+                id="ui-developer.configuration.loggingDocumentationLink"
+                values={{
+                  linkHref: 'https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger',
+                  linkText: 'the documentation',
+                }}
+              />
+              )
               <hr />
               <Field
                 htmlFor="2"
                 component={TextField}
                 name="config.autoLogin.username"
-                label="Auto-login username"
+                label={<FormattedMessage id="ui-developer.configuration.autoLoginUsername" />}
               />
               <Field
                 htmlFor="3"
                 component={TextField}
                 name="config.autoLogin.password"
-                label="Auto-login password"
+                label={<FormattedMessage id="ui-developer.configuration.autoLoginPassword" />}
               />
               <hr />
               <Field
@@ -80,21 +86,21 @@ class Configuration extends React.Component {
                 component={Checkbox}
                 name="config.showPerms"
                 id="config.showPerms"
-                label="Show permissions in user menu?"
+                label={<FormattedMessage id="ui-developer.configuration.showPermissionsInMenu" />}
               />
               <Field
                 htmlFor="5"
                 component={Checkbox}
                 name="config.listInvisiblePerms"
                 id="config.listInvisiblePerms"
-                label="List &quot;invisible&quot; permissions in add-perm menus?"
+                label={<FormattedMessage id="ui-developer.configuration.listInvisiblePermissions" />}
               />
               <Field
                 htmlFor="6"
                 component={Checkbox}
                 name="config.hasAllPerms"
                 id="config.hasAllPerms"
-                label="Act as though user has all permissions?"
+                label={<FormattedMessage id="ui-developer.configuration.actAsRoot" />}
               />
             </Col>
           </Row>
