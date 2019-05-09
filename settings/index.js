@@ -1,5 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
+import { FormattedMessage } from 'react-intl';
+
 import { Settings } from '@folio/stripes/smart-components';
 
 import Configuration from './Configuration';
@@ -10,22 +12,22 @@ import Token from './Token';
 const pages = [
   {
     route: 'configuration',
-    label: 'Configuration',
+    label: <FormattedMessage id="ui-developer.configuration" />,
     component: Configuration,
   },
   {
     route: 'hotkeys',
-    label: 'Hotkeys Test',
+    label: <FormattedMessage id="ui-developer.hotkeys" />,
     component: TestHotkeys,
   },
   {
     route: 'token',
-    label: 'Set Token',
+    label: <FormattedMessage id="ui-developer.setToken" />,
     component: Token,
   },
   {
     route: 'locale',
-    label: 'Session locale',
+    label: <FormattedMessage id="ui-developer.sessionLocale" />,
     component: Locale,
   },
 ];
@@ -34,7 +36,7 @@ class DeveloperSettings extends React.Component {
   static actionNames = ['stripesHome', 'stripesAbout'];
 
   render() {
-    return <Settings {...this.props} pages={pages} paneTitle="Developer" />;
+    return <Settings {...this.props} pages={pages} paneTitle={<FormattedMessage id="ui-developer.meta.title" />} />;
   }
 }
 

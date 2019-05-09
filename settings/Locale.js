@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
 import {
   Pane,
@@ -9,20 +10,20 @@ import {
 
 const Locale = (props) => {
   const locales = [
-    { value: 'ar-AR', label: 'Arabic' },
-    { value: 'zh-CN', label: 'Chinese Simplified' },
-    { value: 'da-DK', label: 'Danish' },
-    { value: 'en-GB', label: 'English - Great Britain' },
-    { value: 'en-SE', label: 'English - Sweden' },
-    { value: 'en-US', label: 'English - United States' },
-    { value: 'de-DE', label: 'German - Germany' },
-    { value: 'hu-HU', label: 'Hungarian' },
-    { value: 'it-IT', label: 'Italian - Italy' },
-    { value: 'pt-BR', label: 'Portuguese - Brazil' },
-    { value: 'pt-PT', label: 'Portuguese - Portugal' },
-    { value: 'es', label: 'Spanish' },
-    { value: 'es-419', label: 'Spanish - Latin America' },
-    { value: 'es-ES', label: 'Spanish - Spain' },
+    { value: 'ar-AR', label: <FormattedMessage id="ui-developer.sessionLocale.ar-AR" /> },
+    { value: 'zh-CN', label: <FormattedMessage id="ui-developer.sessionLocale.zh-CN" /> },
+    { value: 'da-DK', label: <FormattedMessage id="ui-developer.sessionLocale.da-DK" /> },
+    { value: 'en-GB', label: <FormattedMessage id="ui-developer.sessionLocale.en-GB" /> },
+    { value: 'en-SE', label: <FormattedMessage id="ui-developer.sessionLocale.en-SE" /> },
+    { value: 'en-US', label: <FormattedMessage id="ui-developer.sessionLocale.en-US" /> },
+    { value: 'de-DE', label: <FormattedMessage id="ui-developer.sessionLocale.de-DE" /> },
+    { value: 'hu-HU', label: <FormattedMessage id="ui-developer.sessionLocale.hu-HU" /> },
+    { value: 'it-IT', label: <FormattedMessage id="ui-developer.sessionLocale.it-IT" /> },
+    { value: 'pt-BR', label: <FormattedMessage id="ui-developer.sessionLocale.pt-BR" /> },
+    { value: 'pt-PT', label: <FormattedMessage id="ui-developer.sessionLocale.pt-PT" /> },
+    { value: 'es', label: <FormattedMessage id="ui-developer.sessionLocale.es" /> },
+    { value: 'es-419', label: <FormattedMessage id="ui-developer.sessionLocale.es-419" /> },
+    { value: 'es-ES', label: <FormattedMessage id="ui-developer.sessionLocale.es-ES" /> },
   ];
 
 
@@ -37,7 +38,7 @@ const Locale = (props) => {
   return (
     <Pane
       defaultWidth="fill"
-      paneTitle="TEMPORARY Session locale"
+      paneTitle={<FormattedMessage id="ui-developer.sessionLocale.temporarySessionLocale" />}
     >
       <List
         listStyle="bullets"

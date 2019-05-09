@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
+import { FormattedMessage } from 'react-intl';
 import { ConfigForm } from '@folio/stripes/smart-components';
 import { Col, Row, TextField } from '@folio/stripes/components';
 
@@ -37,7 +38,7 @@ class Token extends React.Component {
                 component={TextField}
                 id="token"
                 name="token"
-                label="Authentication token (JWT)"
+                label={<FormattedMessage id="ui-developer.setToken.authenticationToken" />}
               />
             </Col>
           </Row>
