@@ -1,5 +1,10 @@
 # Change history for ui-developer
 
+## [1.9.0](https://github.com/folio-org/ui-developer/tree/v1.9.0) (2019-05-10)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.8.0...v1.9.0)
+
+* i18n. STCOR-333
+
 ## [1.8.0](https://github.com/folio-org/ui-developer/tree/v1.8.0) (2019-03-15)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.7.0...v1.8.0)
 
