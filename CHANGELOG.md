@@ -1,5 +1,9 @@
 # Change history for ui-developer
 
+## 1.10.0 (IN PROGRESS)
+
+* Use more granular permissions. UITEN-35.
+
 ## [1.9.0](https://github.com/folio-org/ui-developer/tree/v1.9.0) (2019-05-10)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.8.0...v1.9.0)
 
