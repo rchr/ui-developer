@@ -14,21 +14,25 @@ const pages = [
     route: 'configuration',
     label: <FormattedMessage id="ui-developer.configuration" />,
     component: Configuration,
+    perm: 'ui-developer.settings.configuration',
   },
   {
     route: 'hotkeys',
     label: <FormattedMessage id="ui-developer.hotkeys" />,
     component: TestHotkeys,
+    perm: 'ui-developer.settings.hotkeys',
   },
   {
     route: 'token',
     label: <FormattedMessage id="ui-developer.setToken" />,
     component: Token,
+    perm: 'ui-developer.settings.token',
   },
   {
     route: 'locale',
     label: <FormattedMessage id="ui-developer.sessionLocale" />,
     component: Locale,
+    perm: 'ui-developer.settings.locale',
   },
 ];
 

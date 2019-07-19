@@ -25,8 +25,32 @@
         "displayName": "UI: Developer module is enabled"
       },
       {
-        "permissionName": "settings.developer.enabled",
+        "permissionName": "ui-developer.settings.configuration",
         "displayName": "Settings (Developer): display list of settings pages",
+        "subPermissions": [
+          "settings.enabled"
+        ],
+        "visible": true
+      },
+      {
+        "permissionName": "ui-developer.settings.hotkeys",
+        "displayName": "Settings (Developer): hot keys test",
+        "subPermissions": [
+          "settings.enabled"
+        ],
+        "visible": true
+      },
+      {
+        "permissionName": "ui-developer.settings.token",
+        "displayName": "Settings (Developer): manage JWT authentication token",
+        "subPermissions": [
+          "settings.enabled"
+        ],
+        "visible": true
+      },
+      {
+        "permissionName": "ui-developer.settings.locale",
+        "displayName": "Settings (Developer): set session locale",
         "subPermissions": [
           "settings.enabled"
         ],
