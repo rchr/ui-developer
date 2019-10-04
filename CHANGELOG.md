@@ -1,5 +1,9 @@
 # Change history for ui-developer
 
+## 1.11.0 (IN PROGRESS)
+
+* Upgrade react-router-dom to v5 and move it to peerDependencies (STCOM-581)
+
 ## [1.10.1](https://github.com/folio-org/ui-developer/tree/v1.10.1) (2019-09-11)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.10.0...v1.10.1)
 
