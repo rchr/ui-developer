@@ -8,7 +8,7 @@
     "configuration.loggingDocumentationLink": "See <a href=\"{linkHref}\">{linkText}</a> for available levels.",
     "configuration.autoLoginUsername": "Auto-login username",
     "configuration.autoLoginPassword": "Auto-login password",
-    "configuration.showPermissionsInMenu": "Show permissions in user menu?",
+    "configuration.showPermissionsInMenu": "Показать разрешения в меню пользователя?",
     "configuration.listInvisiblePermissions": "List \"invisible\" permissions in add-perm menus?",
     "configuration.actAsRoot": "Act as though user has all permissions?",
     "hotkeys.instructions": "When this area is focused, type:",
@@ -29,9 +29,9 @@
     "sessionLocale.pt-BR": "Portuguese - Brazil / Português - Brasil",
     "sessionLocale.pt-PT": "Portuguese - Portugal / Português - Portugal",
     "sessionLocale.es": "Spanish / Español",
-    "sessionLocale.es-419": "Spanish - Latin America / Español - Latino America",
-    "sessionLocale.es-ES": "Spanish - Spain / Español - España",
+    "sessionLocale.es-419": "Испанский - Латинская Америка",
+    "sessionLocale.es-ES": "Испанский - Испания",
     "sessionLocale.ru": "Русский / русский",
-    "sessionLocale.zh-TW": "Chinese Traditional / 中國傳統的",
-    "sessionLocale.ja": "Japanese / 日本語"
+    "sessionLocale.zh-TW": "Китайский традиционный / 中國傳統的",
+    "sessionLocale.ja": "Японский / 日本語"
 }
