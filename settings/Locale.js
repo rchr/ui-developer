@@ -18,6 +18,7 @@ const Locale = (props) => {
     { value: 'en-SE', label: <FormattedMessage id="ui-developer.sessionLocale.en-SE" /> },
     { value: 'en-US', label: <FormattedMessage id="ui-developer.sessionLocale.en-US" /> },
     { value: 'de-DE', label: <FormattedMessage id="ui-developer.sessionLocale.de-DE" /> },
+    { value: 'he', label: <FormattedMessage id="ui-developer.sessionLocale.he" /> },
     { value: 'hu-HU', label: <FormattedMessage id="ui-developer.sessionLocale.hu-HU" /> },
     { value: 'ja', label: <FormattedMessage id="ui-developer.sessionLocale.ja" /> },
     { value: 'it-IT', label: <FormattedMessage id="ui-developer.sessionLocale.it-IT" /> },
