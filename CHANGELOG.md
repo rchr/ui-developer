@@ -1,5 +1,14 @@
 # Change history for ui-developer
 
+## [1.11.0](https://github.com/folio-org/ui-developer/tree/v1.11.0) (2019-12-04)
+[Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.10.1...v1.11.0)
+
+* Add Russian.
+* Add Chinese (traditional).
+* Add Japanese.
+* Add Hebrew.
+* Add French (France).
+
 ## [1.10.1](https://github.com/folio-org/ui-developer/tree/v1.10.1) (2019-09-11)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v1.10.0...v1.10.1)
 
