@@ -62,7 +62,7 @@ class Configuration extends React.Component {
               <SafeHTMLMessage
                 id="ui-developer.configuration.loggingDocumentationLink"
                 values={{
-                  linkHref: 'https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#configuring-the-logger',
+                  linkHref: 'https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#configuring-the-logger',
                   linkText: 'the documentation',
                 }}
               />
