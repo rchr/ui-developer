@@ -5,7 +5,7 @@
     "sessionLocale": "Langue et paramètres régionaux de la session",
     "setToken": "Définir le jeton",
     "configuration.loggingCategories": "Catégories",
-    "configuration.loggingDocumentationLink": "See <a href=\"{linkHref}\">{linkText}</a> for available levels.",
+    "configuration.loggingDocumentationLink": "Voir <a href=\"{linkHref}\"> {linkText} </a> pour les niveaux disponibles.",
     "configuration.autoLoginUsername": "Nom d'utilisateur pour connexion automatique",
     "configuration.autoLoginPassword": "Mot de passe de connexion automatique",
     "configuration.showPermissionsInMenu": "Afficher les autorisations dans le menu utilisateur?",
