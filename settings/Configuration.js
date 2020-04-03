@@ -11,7 +11,10 @@ import SafeHTMLMessage from '@folio/react-intl-safe-html';
 
 class Configuration extends React.Component {
   static propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.object,
+    ]).isRequired,
     stripes: stripesShape.isRequired,
   };
 
@@ -38,6 +41,8 @@ class Configuration extends React.Component {
         showPerms: stripes.config.showPerms || false,
         listInvisiblePerms: stripes.config.listInvisiblePerms || false,
         hasAllPerms: stripes.config.hasAllPerms || false,
+        showHomeLink: stripes.config.showHomeLink || false,
+        showDevInfo: stripes.config.showDevInfo || false,
         autoLogin: {
           username: stripes.config.autoLogin.username,
           password: stripes.config.autoLogin.password,
@@ -99,6 +104,20 @@ class Configuration extends React.Component {
                 name="config.hasAllPerms"
                 id="config.hasAllPerms"
                 label={<FormattedMessage id="ui-developer.configuration.actAsRoot" />}
+              />
+              <Field
+                htmlFor="7"
+                component={Checkbox}
+                name="config.showHomeLink"
+                id="config.showHomeLink"
+                label={<FormattedMessage id="ui-developer.configuration.showHomeLink" />}
+              />
+              <Field
+                htmlFor="8"
+                component={Checkbox}
+                name="config.showDevInfo"
+                id="config.showDevInfo"
+                label={<FormattedMessage id="ui-developer.configuration.showDevInfo" />}
               />
             </Col>
           </Row>
