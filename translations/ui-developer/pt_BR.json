@@ -37,6 +37,6 @@
     "sessionLocale.he": "Hebraico / עברית",
     "sessionLocale.fr-FR": "Francês - França / Français - France",
     "sessionLocale.": "Urdu / اُردُو",
-    "configuration.showHomeLink": "Show home link in top-right menu",
-    "configuration.showDevInfo": "Show developer info"
+    "configuration.showHomeLink": "Mostrar link inicial no menu superior direito",
+    "configuration.showDevInfo": "Mostrar informações do desenvolvedor"
 }
