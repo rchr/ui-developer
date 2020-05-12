@@ -10,6 +10,7 @@ import OkapiPaths from './OkapiPaths';
 import CanIUse from './CanIUse';
 import TestHotkeys from './TestHotkeys';
 import Token from './Token';
+import FolioBabies from './FolioBabies';
 
 const pages = [
   {
@@ -45,6 +46,11 @@ const pages = [
     route: 'can-i-use',
     label: <FormattedMessage id="ui-developer.canIUse" />,
     component: CanIUse,
+  },
+  {
+    route: 'folio-babies',
+    label: <FormattedMessage id="ui-developer.folioBabies" />,
+    component: FolioBabies,
   },
 ];
 
