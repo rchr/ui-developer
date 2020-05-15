@@ -5,7 +5,7 @@
     "sessionLocale": "Session locale",
     "setToken": "Set token",
     "configuration.loggingCategories": "Logging categories",
-    "configuration.loggingDocumentationLink": "See <a>the documentation</a> for available levels.",
+    "configuration.loggingDocumentationLink": "Смотрите<a>документацию </a> для имеющихся уровней",
     "configuration.autoLoginUsername": "Auto-login username",
     "configuration.autoLoginPassword": "Auto-login password",
     "configuration.showPermissionsInMenu": "Показать разрешения в меню пользователя?",
@@ -39,5 +39,7 @@
     "sessionLocale.": "Urdu / اُردُو‎",
     "configuration.showHomeLink": "Показать ссылку на домашнюю страницу правом верхнем углу",
     "configuration.showDevInfo": "Показать информацию для разработчиков",
-    "folioBabies": "Folio babies"
+    "folioBabies": "Folio babies",
+    "canIUse": "I can haz endpoint?",
+    "okapiPaths": "Okapi path mapper"
 }

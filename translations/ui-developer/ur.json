@@ -39,5 +39,7 @@
     "sessionLocale.": "Urdu / اُردُو‎",
     "configuration.showHomeLink": "اوپر دائیں مینو میں ہوم لنک دکھائیں",
     "configuration.showDevInfo": "ڈویلپر کی معلومات دکھائیں",
-    "folioBabies": "Folio babies"
+    "folioBabies": "Folio babies",
+    "canIUse": "I can haz endpoint?",
+    "okapiPaths": "Okapi path mapper"
 }

@@ -39,5 +39,7 @@
     "sessionLocale.": "الأردية / اُردُو",
     "configuration.showHomeLink": "عرض رابط الرئيسية في القائمة العلوية اليمنى",
     "configuration.showDevInfo": "عرض بيانات المطور",
-    "folioBabies": "فرعيات فوليو"
+    "folioBabies": "فرعيات فوليو",
+    "canIUse": "I can haz endpoint?",
+    "okapiPaths": "مخطط مسار أوكابي"
 }
