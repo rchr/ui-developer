@@ -39,5 +39,7 @@
     "sessionLocale.": "Urdu / اُردُو",
     "configuration.showHomeLink": "Mostrar link inicial no menu superior direito",
     "configuration.showDevInfo": "Mostrar informações do desenvolvedor",
-    "folioBabies": "Bebês do Folio"
+    "folioBabies": "Bebês do Folio",
+    "canIUse": "Eu posso usar um endpoint?",
+    "okapiPaths": "Mapeador de caminhos do Okapi"
 }
