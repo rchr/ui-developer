@@ -5,7 +5,7 @@
     "sessionLocale": "会话区域",
     "setToken": "设置令牌",
     "configuration.loggingCategories": "日志类别",
-    "configuration.loggingDocumentationLink": "可用级别见<a href=\"{linkHref}\"> {linkText} </a> 。",
+    "configuration.loggingDocumentationLink": "See <a>the documentation</a> for available levels.",
     "configuration.autoLoginUsername": "自动登录用户名",
     "configuration.autoLoginPassword": "自动登录密码",
     "configuration.showPermissionsInMenu": "在用户菜单中显示权限？",
