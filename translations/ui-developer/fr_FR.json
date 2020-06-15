@@ -21,5 +21,14 @@
     "configuration.showDevInfo": "Show developer info",
     "folioBabies": "Folio babies",
     "canIUse": "I can haz endpoint?",
-    "okapiPaths": "Okapi path mapper"
+    "okapiPaths": "Okapi path mapper",
+    "okapiConfigurationEntries": "Entrées de configuration Okapi",
+    "okapiConfigurationEntries.loading": "Récupération des entrées de configuration ...",
+    "okapiConfigurationEntries.filterByModule": "Filtrer par module",
+    "okapiConfigurationEntries.filterByModule.noFilter": "Pas de filtre",
+    "okapiConfigurationEntries.module": "Module",
+    "okapiConfigurationEntries.configName": "Nom de la configuration",
+    "okapiConfigurationEntries.code": "Code",
+    "okapiConfigurationEntries.value": "Valeur",
+    "okapiConfigurationEntries.confirm": "Are you certain you want to delete this config entry?\nModule: {module}\nConfig name: {configName}\nCode: {code}"
 }

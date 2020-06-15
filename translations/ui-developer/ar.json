@@ -21,5 +21,14 @@
     "configuration.showDevInfo": "عرض بيانات المطور",
     "folioBabies": "فرعيات فوليو",
     "canIUse": "هل يمكنني استخدام نقطة الانتهاء؟",
-    "okapiPaths": "مخطط مسار أوكابي"
+    "okapiPaths": "مخطط مسار أوكابي",
+    "okapiConfigurationEntries": "إدخالات تهيئة أوكابي",
+    "okapiConfigurationEntries.loading": "جاري استعادة إدخالات التهيئة ...",
+    "okapiConfigurationEntries.filterByModule": "تنقيح بواسطة الوحدة",
+    "okapiConfigurationEntries.filterByModule.noFilter": "لا يوجد منقح",
+    "okapiConfigurationEntries.module": "وحدة",
+    "okapiConfigurationEntries.configName": "اسم التهيئة",
+    "okapiConfigurationEntries.code": "رمز",
+    "okapiConfigurationEntries.value": "القيمة",
+    "okapiConfigurationEntries.confirm": "هل أنت متأكد من أنك تريد حذف إدخال التهيئة؟\nالوحدة: {module}\nاسم التهيئة: {configName}\nالرمز: {code}"
 }
