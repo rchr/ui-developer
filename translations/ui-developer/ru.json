@@ -22,13 +22,14 @@
     "folioBabies": "Folio babies",
     "canIUse": "I can haz endpoint?",
     "okapiPaths": "Okapi path mapper",
-    "okapiConfigurationEntries": "Okapi config entries",
-    "okapiConfigurationEntries.loading": "Retrieving configuration entries...",
+    "okapiConfigurationEntries": "Настройки Okapi",
+    "okapiConfigurationEntries.loading": "Получение настроек...",
     "okapiConfigurationEntries.filterByModule": "Фильтровать по модулю",
     "okapiConfigurationEntries.filterByModule.noFilter": "Нет фильтра",
     "okapiConfigurationEntries.module": "Модуль",
     "okapiConfigurationEntries.configName": "Название параметра",
     "okapiConfigurationEntries.code": "Код",
     "okapiConfigurationEntries.value": "Значение",
-    "okapiConfigurationEntries.confirm": "Вы уверены, что хотите удалить эту настройку?\nМодуль: {module}\nНазвание параметра: {configName}\nКод: {code}"
+    "okapiConfigurationEntries.confirm": "Вы уверены, что хотите удалить эту настройку?\nМодуль: {module}\nНазвание параметра: {configName}\nКод: {code}",
+    "perms": "Текущие разрешения"
 }
