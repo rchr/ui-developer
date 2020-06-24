@@ -5,7 +5,7 @@
     "sessionLocale": "Session locale",
     "setToken": "Set token",
     "configuration.loggingCategories": "Logging categories",
-    "configuration.loggingDocumentationLink": "Смотрите<a>документацию </a> для имеющихся уровней",
+    "configuration.loggingDocumentationLink": "Смотрите <a>документацию</a> для имеющихся уровней",
     "configuration.autoLoginUsername": "Auto-login username",
     "configuration.autoLoginPassword": "Auto-login password",
     "configuration.showPermissionsInMenu": "Показать разрешения в меню пользователя?",
