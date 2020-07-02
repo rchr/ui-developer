@@ -31,5 +31,14 @@
     "okapiConfigurationEntries.code": "Código",
     "okapiConfigurationEntries.value": "Valor",
     "okapiConfigurationEntries.confirm": "Tem certeza de que deseja excluir esta entrada de configuração? \n Módulo: {module} \n Nome da configuração: {configName} \n Código: {code}",
-    "perms": "Permissões atuais"
+    "perms": "Permissões atuais",
+    "passwd": "Passwd",
+    "passwd.setUserPassword": "Set a user's password",
+    "passwd.username": "Username",
+    "passwd.password": "Password",
+    "passwd.confirmPassword": "Confirm password",
+    "passwd.error.confirm": "Passwords must match",
+    "passwd.error.missingUser": "Error: Could not find the username \"{username}\"",
+    "passwd.error": "Sorry, there was an error: {error}",
+    "passwd.success": "Successfully reset password for {username}"
 }
