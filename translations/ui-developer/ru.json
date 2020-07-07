@@ -32,13 +32,13 @@
     "okapiConfigurationEntries.value": "Значение",
     "okapiConfigurationEntries.confirm": "Вы уверены, что хотите удалить эту настройку?\nМодуль: {module}\nНазвание параметра: {configName}\nКод: {code}",
     "perms": "Текущие разрешения",
-    "passwd": "Passwd",
-    "passwd.setUserPassword": "Set a user's password",
-    "passwd.username": "Username",
-    "passwd.password": "Password",
-    "passwd.confirmPassword": "Confirm password",
-    "passwd.error.confirm": "Passwords must match",
-    "passwd.error.missingUser": "Error: Could not find the username \"{username}\"",
-    "passwd.error": "Sorry, there was an error: {error}",
-    "passwd.success": "Successfully reset password for {username}"
+    "passwd": "Пароль",
+    "passwd.setUserPassword": "Установить пароль для данного пользователя",
+    "passwd.username": "Имя пользователя",
+    "passwd.password": "Пароль",
+    "passwd.confirmPassword": "Подтвердите пароль",
+    "passwd.error.confirm": "Пароли должны совпадать",
+    "passwd.error.missingUser": "Ошибка: не удалось найти имя пользователя \"{username}\"",
+    "passwd.error": "Извините, произошла ошибка: {error}",
+    "passwd.success": "Успешно сброшен пароль для {username}"
 }
