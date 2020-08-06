@@ -40,5 +40,18 @@
     "passwd.error.confirm": "As senhas devem coincidir",
     "passwd.error.missingUser": "Erro: não foi possível encontrar o nome de usuário \"{username}\"",
     "passwd.error": "Desculpe, ocorreu um erro: {error}",
-    "passwd.success": "Senha redefinida com sucesso para o usuário {username}"
+    "passwd.success": "Senha redefinida com sucesso para o usuário {username}",
+    "permission.settings.configuration": "Configurações (desenvolvedor): configuração",
+    "permission.settings.perms": "Configurações (desenvolvedor): permissões",
+    "permission.settings.hotkeys": "Configurações (desenvolvedor): teste de teclas de atalho",
+    "permission.settings.token": "Configurações (desenvolvedor): gerenciar token de autenticação JWT",
+    "permission.settings.locale": "Configurações (desenvolvedor): definir o idioma da sessão",
+    "permission.settings.okapiConfiguration": "Configurações (desenvolvedor): pode editar valores de configuração do tenant",
+    "permission.settings.passwd": "Configurações (desenvolvedor): pode alterar as senhas dos usuários",
+    "okapiQuery": "Consulta Okapi",
+    "okapiQuery.queryPath": "Caminho da consulta",
+    "okapiQuery.runQuery": "Executar consulta",
+    "okapiQuery.running": "Consultando…",
+    "okapiQuery.limitWarning": "Os resultados são limitados a 100 registros",
+    "permission.settings.okapiQuery": "Configurações (desenvolvedor): pode executar consultas"
 }
