@@ -40,5 +40,18 @@
     "passwd.error.confirm": "Пароли должны совпадать",
     "passwd.error.missingUser": "Ошибка: не удалось найти имя пользователя \"{username}\"",
     "passwd.error": "Извините, произошла ошибка: {error}",
-    "passwd.success": "Успешно сброшен пароль для {username}"
+    "passwd.success": "Успешно сброшен пароль для {username}",
+    "permission.settings.configuration": "Settings (Developer): configuration",
+    "permission.settings.perms": "Settings (Developer): perms",
+    "permission.settings.hotkeys": "Settings (Developer): hot keys test",
+    "permission.settings.token": "Settings (Developer): manage JWT authentication token",
+    "permission.settings.locale": "Settings (Developer): set session locale",
+    "permission.settings.okapiConfiguration": "Settings (developer): Can edit tenant configuration values",
+    "permission.settings.passwd": "Settings (developer): Can change users' passwords",
+    "okapiQuery": "Okapi query",
+    "okapiQuery.queryPath": "Query path",
+    "okapiQuery.runQuery": "Run query",
+    "okapiQuery.running": "Querying …",
+    "okapiQuery.limitWarning": "Results are capped at 100 records",
+    "permission.settings.okapiQuery": "Settings (developer): Can run queries"
 }

@@ -40,5 +40,18 @@
     "passwd.error.confirm": "يجب أن تتطابق كلمات المرور",
     "passwd.error.missingUser": "خطأ: تعذر الحصول على اسم المستخدم \"{username}\"",
     "passwd.error": "عذراً، لقد حدث خطأ: {error}",
-    "passwd.success": "تمت إعادة تعيين كلمة المرور بنجاح لـ {username}"
+    "passwd.success": "تمت إعادة تعيين كلمة المرور بنجاح لـ {username}",
+    "permission.settings.configuration": "الإعدادات (المطور): تهيئة",
+    "permission.settings.perms": "الإعدادات (المطور): الصلاحيات",
+    "permission.settings.hotkeys": "الإعدادات (المطور): اختبار مفاتيح التشغيل السريع",
+    "permission.settings.token": "الإعدادات (المطور): أدّر رمز استيثاق JWT",
+    "permission.settings.locale": "الإعدادات (المطور): عيّن الملف المحلي للجلسة",
+    "permission.settings.okapiConfiguration": "الإعدادات (المطور): إمكانية تحرير قيم تهيئة المستأجر",
+    "permission.settings.passwd": "الإعدادات (المطور): إمكانية تغيير كلمات مرور المستخدمين",
+    "okapiQuery": "استعلام أوكابي",
+    "okapiQuery.queryPath": "مسار الاستعلام",
+    "okapiQuery.runQuery": "تشغيل الاستعلام",
+    "okapiQuery.running": "جاري الاستعلام ...",
+    "okapiQuery.limitWarning": "تم وضع حد أقصى للنتائج من 100 تسجيلة",
+    "permission.settings.okapiQuery": "الإعدادات (المطور): إمكانية تشغيل الاستعلامات"
 }

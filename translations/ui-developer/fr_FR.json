@@ -40,5 +40,18 @@
     "passwd.error.confirm": "Les mots de passe doivent correspondre",
     "passwd.error.missingUser": "Erreur: impossible de trouver le nom d'utilisateur \" {username} \"",
     "passwd.error": "Désolé, une erreur s'est produite: {error}",
-    "passwd.success": "Réinitialisation réussie du mot de passe pour {username}"
+    "passwd.success": "Réinitialisation réussie du mot de passe pour {username}",
+    "permission.settings.configuration": "Settings (Developer): configuration",
+    "permission.settings.perms": "Settings (Developer): perms",
+    "permission.settings.hotkeys": "Settings (Developer): hot keys test",
+    "permission.settings.token": "Settings (Developer): manage JWT authentication token",
+    "permission.settings.locale": "Settings (Developer): set session locale",
+    "permission.settings.okapiConfiguration": "Settings (developer): Can edit tenant configuration values",
+    "permission.settings.passwd": "Settings (developer): Can change users' passwords",
+    "okapiQuery": "Requête Okapi",
+    "okapiQuery.queryPath": "Chemin de la requête",
+    "okapiQuery.runQuery": "Exécuter la requête",
+    "okapiQuery.running": "Requête en cours...",
+    "okapiQuery.limitWarning": "Les résultats sont plafonnés à 100 enregistrements",
+    "permission.settings.okapiQuery": "Settings (developer): Can run queries"
 }
