@@ -5,6 +5,7 @@
 * Increment `@folio/stripes` to `v5`, `react-router` to `v5.2`.
 * New developer-setting page: "Okapi query" lets you, you know, query Okapi.
 * Update to react-intl v5. UID-25.
+* Fix calls to `FormatDisplayName()` to work with `react-intl`. Fixes UID-30.
 * Import supported locales from `@folio/stripes/core`.
 
 ## [3.1.0](https://github.com/folio-org/ui-developer/tree/v3.1.0) (IN PROGRESS)
