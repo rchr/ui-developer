@@ -10,6 +10,7 @@
 * Fix calls to `FormatDisplayName()` to work with `react-intl`. Fixes UID-30.
 * Import supported locales from `@folio/stripes/core`.
 * Update queries related to OKAPI-863, OKAPI-835. Fixes UID-34.
+* Add `suppressIntlErrors` toggle to configuration page.
 
 ## [3.0.0](https://github.com/folio-org/ui-developer/tree/v3.0.0) (2020-06-10)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v2.0.0...v3.0.0)
