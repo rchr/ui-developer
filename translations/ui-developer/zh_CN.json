@@ -54,5 +54,6 @@
     "okapiQuery.running": "正在查询...",
     "okapiQuery.limitWarning": "结果上限为100条记录",
     "permission.settings.okapiQuery": "设置（开发者）：可以运行查询",
-    "DO_NOT_TRANSLATE": "This translation is a playground"
+    "DO_NOT_TRANSLATE": "This translation is a playground",
+    "configuration.suppressIntlErrors": "Suppress intl errors"
 }

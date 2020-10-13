@@ -54,5 +54,6 @@
     "okapiQuery.running": "Querying …",
     "okapiQuery.limitWarning": "Results are capped at 100 records",
     "permission.settings.okapiQuery": "Settings (developer): Can run queries",
-    "DO_NOT_TRANSLATE": "This translation is a playground"
+    "DO_NOT_TRANSLATE": "This translation is a playground",
+    "configuration.suppressIntlErrors": "Suppress intl errors"
 }
