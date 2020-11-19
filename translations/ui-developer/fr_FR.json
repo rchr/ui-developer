@@ -17,7 +17,7 @@
     "hotkeys.undefined": "Indéfini",
     "setToken.authenticationToken": "Jeton d'authentification (JWT)",
     "sessionLocale.temporarySessionLocale": "Langue et paramètres régionaux TEMPORAIRES",
-    "configuration.showHomeLink": "Show home link in top-right menu",
+    "configuration.showHomeLink": "Afficher le lien d'accueil dans le menu en haut à droite",
     "configuration.showDevInfo": "Show developer info",
     "folioBabies": "FOLIO babies",
     "canIUse": "I can haz endpoint?",
