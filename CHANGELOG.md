@@ -2,6 +2,8 @@
 
 ## 4.1.0 IN PROGRESS
 
+* Show values stored in mod-template-engine.
+
 ## [4.0.0](https://github.com/folio-org/ui-developer/tree/v4.0.0) (2020-10-09)
 [Full Changelog](https://github.com/folio-org/ui-developer/compare/v3.0.0...v4.0.0)
 
