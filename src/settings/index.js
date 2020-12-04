@@ -4,17 +4,18 @@ import { FormattedMessage, useIntl } from 'react-intl';
 
 import { Settings } from '@folio/stripes/smart-components';
 
-import Configuration from './Configuration';
-import ShowPermissions from './ShowPermissions';
-import Locale from './Locale';
-import OkapiPaths from './OkapiPaths';
 import CanIUse from './CanIUse';
+import Configuration from './Configuration';
+import FolioBabies from './FolioBabies';
+import Locale from './Locale';
+import OkapiConfiguration from './OkapiConfiguration';
+import OkapiPaths from './OkapiPaths';
+import OkapiQuery from './OkapiQuery';
+import Passwd from './Passwd';
+import ShowPermissions from './ShowPermissions';
+import Templates from './Templates';
 import TestHotkeys from './TestHotkeys';
 import Token from './Token';
-import FolioBabies from './FolioBabies';
-import OkapiConfiguration from './OkapiConfiguration';
-import Passwd from './Passwd';
-import OkapiQuery from './OkapiQuery';
 
 const pages = [
   {
@@ -79,6 +80,12 @@ const pages = [
     labelId: 'ui-developer.okapiQuery',
     component: OkapiQuery,
     perm: 'ui-developer.settings.okapiQuery',
+  },
+  {
+    route: 'templates',
+    labelId: 'ui-developer.templates',
+    component: Templates,
+    perm: 'ui-developer.settings.templates',
   },
 ];
 

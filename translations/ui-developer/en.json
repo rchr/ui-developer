@@ -62,6 +62,11 @@
   "permission.settings.locale": "Settings (Developer): set session locale",
   "permission.settings.okapiConfiguration": "Settings (developer): Can edit tenant configuration values",
   "permission.settings.passwd": "Settings (developer): Can change users' passwords",
-  "permission.settings.okapiQuery": "Settings (developer): Can run queries"
+  "permission.settings.okapiQuery": "Settings (developer): Can run queries",
 
+  "templates": "Templates",
+  "templates.loading": "Loading templates...",
+  "templates.key": "key",
+  "templates.value": "value",
+  "templates.locale": "Locale: {locale}"
 }

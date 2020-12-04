@@ -20,6 +20,12 @@
       "stripesAbout"
     ],
     "okapiInterfaces": {},
+    "optionalOkapiInterfaces": {
+      "configuration": "2.0",
+      "login": "7.0",
+      "permissions": "5.0",
+      "users": "15.0"
+    },
     "permissionSets": [
       {
         "permissionName": "module.developer.enabled",
@@ -96,6 +102,15 @@
       {
         "permissionName": "ui-developer.settings.okapiQuery",
         "displayName": "Settings (developer): Can run queries",
+        "subPermissions": [
+          "configuration.all",
+          "settings.developer.enabled"
+        ],
+        "visible": true
+      },
+      {
+        "permissionName": "ui-developer.settings.templates",
+        "displayName": "Settings (developer): Can see mod-template-engine values",
         "subPermissions": [
           "configuration.all",
           "settings.developer.enabled"
